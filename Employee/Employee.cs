@@ -90,9 +90,9 @@ namespace ConsoleApp3
 
                 if (flag == 0)
                 {
-                    for (int i = 3; i < 7; i++)
+                    for (int count = 3; count < 7; count++)
                     {
-                        if (!Char.IsDigit(employeeid[i]))
+                        if (!Char.IsDigit(employeeid[count]))
                         {
                             flag = 1;
                             break;
@@ -126,9 +126,9 @@ namespace ConsoleApp3
                 int length = employeename.Length;
                 String nameasuppercase = employeename.ToUpper();
                 char[] data = nameasuppercase.ToCharArray();
-                for (int k = 0; k < length; k++)
+                for (int count = 0; count < length; count++)
                 {
-                    int asciinum = (int)data[k];
+                    int asciinum = (int)data[count];
                     if (asciinum != 32)
                     {
                         if (asciinum < 65 || asciinum > 90)
